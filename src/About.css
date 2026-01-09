@@ -1,0 +1,100 @@
+/* Palette de couleurs basée sur votre image */
+:root {
+  --bg-cream: #f4eee0;
+  --bg-soft-brown: #d9c5b2;
+  --text-dark: #3e2723;
+  --accent-brown: #a67c52;
+  --white: #ffffff;
+}
+
+.about-page {
+  background-color: var(--bg-cream);
+  color: var(--text-dark);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.about-hero {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: var(--bg-soft-brown);
+  border-radius: 0 0 50px 50px; /* Courbe vers le bas */
+}
+
+.about-hero h1 {
+  font-size: 2.8rem;
+  margin: 10px 0;
+  font-weight: 800;
+}
+
+.subtitle {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  color: var(--accent-brown);
+}
+
+/* History Section */
+.about-history {
+  padding: 60px 10%;
+}
+
+.history-container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  background: var(--white);
+  padding: 40px;
+  border-radius: 40px; /* Coins très arrondis comme la maquette */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.history-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 30px;
+}
+
+/* Values Grid */
+.about-values {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 60px 10%;
+}
+
+.value-card {
+  background: var(--bg-soft-brown);
+  padding: 40px 30px;
+  text-align: center;
+  border-radius: 40px;
+  transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-10px);
+}
+
+.value-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  background-color: var(--text-dark);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .history-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
