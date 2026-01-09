@@ -13,27 +13,7 @@
   font-family: 'Playfair Display', serif; /* Assure-toi d'avoir une police Serif */
 }
 
-/* Header */
-.bakery-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 24px 48px;
-}
 
-.bakery-logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  letter-spacing: 0.2em;
-}
-
-.nav-links a {
-  margin: 0 15px;
-  text-decoration: none;
-  color: inherit;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-}
 
 .btn-order {
   background-color: var(--bakery-brown-light);
