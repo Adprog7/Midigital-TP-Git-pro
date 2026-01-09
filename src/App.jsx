@@ -1,4 +1,4 @@
-import Accueil from './components/Accueil';
+import Accueil from './components/page-accueil.jsx';
 
 function App() {
   return (
