@@ -10,7 +10,7 @@ function App() {
       <main>
         <About />
       </main>
-
+      
       {/* Footer simple pour rester dans le thème */}
       <footer style={{ textAlign: 'center', padding: '40px', background: '#f4eee0', color: '#3e2723' }}>
         <p>© 2026 Artisan Bakery - Fait avec passion</p>
