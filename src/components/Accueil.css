@@ -1,0 +1,65 @@
+/* Palette de couleurs inspirée de l'image */
+:root {
+  --bakery-beige: #fdf8f1;
+  --bakery-brown-dark: #5d4037;
+  --bakery-brown-light: #8d6e63;
+  --bakery-white: #ffffff;
+}
+
+.bakery-container {
+  background-color: var(--bakery-beige);
+  min-height: 100vh;
+  color: var(--bakery-brown-dark);
+  font-family: 'Playfair Display', serif; /* Assure-toi d'avoir une police Serif */
+}
+
+
+
+.btn-order {
+  background-color: var(--bakery-brown-light);
+  color: white;
+  padding: 10px 25px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 40px 48px;
+  text-align: center;
+}
+
+.hero-card {
+  background: var(--bakery-white);
+  padding: 60px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.hero-grid img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.img-offset {
+  margin-top: 40px; /* Reproduit l'effet décalé de l'image */
+}

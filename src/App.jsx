@@ -1,9 +1,15 @@
-import Accueil from './components/page-accueil.jsx';
+import Navbar from './components/Navbar';
+import Accueil from './components/page-accueil';
 
 function App() {
   return (
-    <div>
-      <Accueil />
+    <div className="App">
+      {/* La Navbar est ici, donc elle sera visible partout */}
+      <Navbar /> 
+      
+      <main>
+        <Accueil />
+      </main>
     </div>
   );
 }
