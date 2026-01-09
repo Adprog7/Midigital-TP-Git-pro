@@ -1,0 +1,72 @@
+/* Import d'une police élégante si tu ne l'as pas encore fait */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+.bakery-header {
+  display: flex;
+  justify-content: space-between; /* Espace entre Logo, Menu et Bouton */
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #fdf8f1; /* Fond crème identique à l'image */
+  font-family: 'Playfair Display', serif;
+  border-bottom: 1px solid rgba(93, 64, 55, 0.1); /* Ligne très fine pour structurer */
+}
+
+.bakery-logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.3em; /* Espacement des lettres comme sur la maquette */
+  color: #5d4037;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 35px; /* Espace entre chaque lien */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #5d4037;
+  font-size: 0.85rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: opacity 0.3s ease;
+}
+
+.nav-links a:hover {
+  opacity: 0.6;
+}
+
+.btn-order {
+  background-color: #8d6e63; /* Marron chaud */
+  color: #ffffff;
+  padding: 10px 25px;
+  border-radius: 25px; /* Bouton bien arrondi */
+  border: none;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s active;
+}
+
+.btn-order:hover {
+  background-color: #5d4037; /* Plus foncé au survol */
+}
+
+/* Version responsive pour mobile */
+@media (max-width: 768px) {
+  .bakery-header {
+    padding: 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .nav-links {
+    gap: 15px;
+  }
+}

@@ -4,16 +4,7 @@ import './Accueil.css'; // Importation du style séparé
 const Accueil = () => {
   return (
     <div className="bakery-container">
-      <header className="bakery-header">
-        <div className="bakery-logo">BAKERY</div>
-        <nav className="nav-links">
-          <a href="#home">Home</a>
-          <a href="#menu">Menu</a>
-          <a href="#about">About Us</a>
-          <a href="#contact">Contact</a>
-        </nav>
-        <button className="btn-order">ORDER NOW</button>
-      </header>
+      
 
       <section className="hero-section">
         <div className="hero-card">
