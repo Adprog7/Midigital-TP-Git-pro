@@ -1,6 +1,7 @@
 import React from 'react'
 import About from './About' // On importe ton nouveau composant
 import './App.css'
+import Produits from './Produits'
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
       {/* Ici, on pourrait mettre une barre de navigation plus tard */}
       
       <main>
-        <About />
+        <Produits />
       </main>
       
       {/* Footer simple pour rester dans le thème */}
