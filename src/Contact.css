@@ -1,0 +1,123 @@
+:root {
+  --bg-cream: #f4eee0;
+  --bg-soft-brown: #d9c5b2;
+  --text-dark: #3e2723;
+  --accent-brown: #a67c52;
+  --white: #ffffff;
+}
+
+.contact-page {
+  background-color: var(--bg-cream);
+  min-height: 100vh;
+  width: 100%;
+}
+
+.contact-hero {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: var(--bg-soft-brown);
+  border-radius: 0 0 50px 50px;
+  margin-bottom: 60px;
+}
+
+.contact-hero h1 {
+  font-size: 2.8rem;
+  color: var(--text-dark);
+  margin: 10px 0;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px 80px 20px;
+}
+
+/* Cartes d'informations */
+.info-card {
+  background: var(--white);
+  padding: 30px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.info-card h3 {
+  color: var(--accent-brown);
+  margin-bottom: 15px;
+}
+
+.info-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.info-card li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border-bottom: 1px dashed var(--bg-soft-brown);
+  padding-bottom: 5px;
+}
+
+/* Formulaire */
+.contact-form-container {
+  background: var(--white);
+  padding: 40px;
+  border-radius: 40px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: var(--text-dark);
+}
+
+.form-group input, 
+.form-group textarea {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid var(--bg-cream);
+  border-radius: 15px;
+  background: var(--bg-cream);
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+  border-color: var(--accent-brown);
+}
+
+.btn-submit {
+  background-color: var(--text-dark);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s;
+}
+
+.btn-submit:hover {
+  background-color: var(--accent-brown);
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+}
