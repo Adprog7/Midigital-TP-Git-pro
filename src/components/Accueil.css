@@ -32,11 +32,7 @@
 }
 
 .hero-card {
-  background: var(--bakery-white);
-  padding: 60px;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-  max-width: 1000px;
+  max-width: 1400px; /* Plus large, mais garde un cadre propre */
   margin: 0 auto;
 }
 
